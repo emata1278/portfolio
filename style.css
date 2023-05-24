@@ -171,9 +171,26 @@ div.homeContainer {
 
 
 .firstSection {
-    background-color: red;
+    background-color: #161616;
     padding-top: 20px;
     position: relative;
+}
+
+.aboutMe {
+    padding-top: 20px;
+}
+
+.line {
+    border: 2px solid red;
+}
+
+.aboutMe h3 {
+    padding-top: 20px;
+    border-top: 2px solid red;
+}
+
+.bottomAM {
+    color: purple;
 }
 
 
