@@ -7,7 +7,8 @@
 
 
 body {
-    background-color: gray;
+    background-color: #161616;
+    color: white;
 }
 
 /*hidden and show are for scrolling animations*/
@@ -15,7 +16,7 @@ body {
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100%);
-    transition: all 1s;
+    transition: all 1.5s;
 }
 
 .show {
@@ -24,7 +25,7 @@ body {
     transform: translateX(0);
 }
 
-@media(prefers-redcued-motion) {
+@media(prefers-reduced-motion) {
     .hidden {
         transition: none;
     }
@@ -70,6 +71,7 @@ ul li {
 }
 ul li a {
     color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -80,7 +82,34 @@ ul li a:hover {
 
 div.homeContainer {
     
-    margin: 200px 0px 360px;
+    width: 100%;
+    height: 92vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 200px 0px 360px; */
+    
+}
+
+.homeContainer video {
+    position: absolute;
+    top: 9%;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 95%;
+    pointer-events: none;
+
+}
+
+.homeContainer .content {
+    position: relative;
+    z-index: 0;
+    max-width: 1000px;
+    margin: 0 auto;
+    color: white;
 }
 
 .homeContainer {
@@ -119,7 +148,7 @@ div.homeContainer {
 }
 
 .typetext {
-    border-right: 2px solid black;
+    border-right: 2px solid white;
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
@@ -138,6 +167,13 @@ div.homeContainer {
 }
 @keyframes cursor {
     20% {border-color: transparent;}
+}
+
+
+.firstSection {
+    background-color: red;
+    padding-top: 20px;
+    position: relative;
 }
 
 
