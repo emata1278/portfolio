@@ -5,11 +5,16 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 body {
     background-color: #161616;
     color: white;
 }
+
 
 /*hidden and show are for scrolling animations*/
 .hidden {
@@ -31,17 +36,6 @@ body {
     }
 }
 
-.boxSkills {
-    display: flex;
-}
-
-.boxSkills:nth-child(2) {
-    transition-delay: 200ms;
-}
-
-.boxSkills:nth-child(3) {
-    transition-delay: 400ms;
-}
 
 
 
@@ -95,7 +89,7 @@ ul li a:hover {
 div.homeContainer {
     
     width: 100%;
-    height: 92vh;
+    height: 95vh;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -182,11 +176,14 @@ div.homeContainer {
 }
 
 
-.firstSection {
+div.firstSection {
     background-color: #161616;
-    padding-top: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    height: 80vh;
+    height: 100vh;
 }
 
 .aboutMe {
@@ -235,6 +232,18 @@ div.homeContainer {
     transition: 0.5s;
 }
 
+.boxSkills {
+    display: flex;
+}
+
+.boxSkills:nth-child(3) {
+    transition-delay: 200ms;
+}
+
+.boxSkills:nth-child(4) {
+    transition-delay: 400ms;
+}
+
 .skillSection .boxSkills::before {
     content:"";
     position: absolute;
@@ -271,18 +280,18 @@ div.homeContainer {
 
 }
 
-.skillSection .boxSkills:nth-child(1):before,
-.skillSection .boxSkills:nth-child(1):after {
-    background: linear-gradient(315deg, #ffbc00, #ff0058)
-}
-
 .skillSection .boxSkills:nth-child(2):before,
 .skillSection .boxSkills:nth-child(2):after {
-    background: linear-gradient(315deg, #03a9f4, #ff0058)
+    background: linear-gradient(315deg, #ffbc00, #ff0058)
 }
 
 .skillSection .boxSkills:nth-child(3):before,
 .skillSection .boxSkills:nth-child(3):after {
+    background: linear-gradient(315deg, #03a9f4, #ff0058)
+}
+
+.skillSection .boxSkills:nth-child(4):before,
+.skillSection .boxSkills:nth-child(4):after {
     background: linear-gradient(315deg, #4dff03, #00d0ff)
 }
 

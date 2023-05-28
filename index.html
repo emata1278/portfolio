@@ -21,9 +21,9 @@
 <header class ="hero container">
     <h4>EM</h4>
     <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Skills</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#">Project</a></li>
         <li><a href="#">Contact</a></li>
         
@@ -31,7 +31,7 @@
 </header>
 
 
-<div class = "homeContainer">
+<div class = "homeContainer" id="home">
     <video autoplay muted loop src="network.mp4" class ="video"></video>
     <span class="content">
     <h3>Hello, my name is</h3>
@@ -43,7 +43,7 @@
     </span>
 </div>
 
-<div class = "firstSection">
+<div class = "firstSection" id="about">
 <nav class = "aboutMe container hidden">
     <h1>About Me</h1>
     <span class="line"></span>
@@ -65,14 +65,14 @@
 </nav>
 </div>
 
-<h1 class="container">Skills</h1> 
-<nav class="skillSection container hidden">
-    
+
+    <nav class="skillSection container">
+    <h1 class="container hidden" id="skills">Skills</h1> 
     <div class="boxSkills hidden">
         <span></span>
         <div class="contentCard">
-            <h2>Card 1</h2>
-            <p>Lots of skills included here</p>
+            <h2>Back-End</h2>
+            <p>Java, PostgreSQL, Python, C++, RESTful APIs</p>
             <a href="#">Read more</a>
         </div>
     </div>
@@ -80,8 +80,8 @@
     <div class="boxSkills hidden">
         <span></span>
         <div class="contentCard">
-            <h2>Card 2</h2>
-            <p>Lots of skills included here</p>
+            <h2>Front-End</h2>
+            <p>HTML, CSS, JavaScript, Vue.js</p>
             <a href="#">Read more</a>
         </div>
     </div>
@@ -89,12 +89,12 @@
     <div class="boxSkills hidden">
         <span></span>
         <div class="contentCard">
-            <h2>Card 3</h2>
-            <p>Lots of skills included here</p>
+            <h2>Tools</h2>
+            <p>Git, Postman, IntelliJ, Unit Testing(JUnit), </p>
             <a href="#">Read more</a>
         </div>
     </div>
-</nav>
+    </nav>
 
 <script src="app.js"></script>
 <script defer src="scroll.js"></script>
