@@ -218,7 +218,7 @@ div.firstSection {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 40px 0;
+    
 }
 
 .skillSection .boxSkills {
@@ -228,7 +228,7 @@ div.firstSection {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 40px 30px;
+    margin: 10px 30px;
     transition: 0.5s;
 }
 
@@ -394,6 +394,104 @@ div.firstSection {
 
 .skillSection .boxSkills:hover .contentCard {
     left: -25px;
+}
+
+
+/*project cards*/
+
+.projects {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 300px 50px;
+}
+
+.projects .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    height: 300px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0.35px 80px rgba(0,0,0,0.15);
+    transition: 0.5s;
+}
+
+.projects .card:hover {
+    height: 400px;
+}
+
+.projects .card .img {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: black;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s
+}
+
+.projects .card:hover .img {
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.2);
+}
+
+.projects .card .img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    color: black;
+}
+
+.projects .card .content {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    padding: 0 30px;
+    height: 35px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.projects .card:hover .content {
+    top: 130px;
+    height: 250px;
+}
+
+.projects .card .content h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--clr);
+}
+
+.projects .card .content p {
+    color: #333;
+}
+
+.projects .card .content a {
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 15px;
+    background: var(--clr);
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 8px;
 }
 
 
