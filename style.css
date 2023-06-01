@@ -218,6 +218,7 @@ div.firstSection {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    height: 90vh;
     
 }
 
@@ -306,7 +307,7 @@ div.firstSection {
     pointer-events: none;
 }
 
-.skillSection .boxSkills span::before {
+/* .skillSection .boxSkills span::before {
     content: "";
     position: absolute;
     top: 0;
@@ -317,8 +318,8 @@ div.firstSection {
     background: rgba(255,255,255,0.1);
     backdrop-filter: blue(10px);
     opacity: 0;
-    transition: 0.5s;
-}
+    transition: 5s;
+} */
 
 .skillSection .boxSkills span::before {
     content: "";
@@ -418,7 +419,7 @@ div.firstSection {
     height: 300px;
     background: #fff;
     border-radius: 20px;
-    box-shadow: 0.35px 80px rgba(0,0,0,0.15);
+    box-shadow: 0.35px 20px rgba(0,0,0,0.15);
     transition: 0.5s;
 }
 
@@ -495,6 +496,105 @@ div.firstSection {
 }
 
 
+.outcard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px 50px;
+    flex-wrap: wrap;
+}
+.outcard:nth-child(2) {
+ transition-delay: 200ms;
+}
+ .outcard:first-child {
+    transition-delay: 250ms;
+ }
+
+
+ /*Contact Part*/
+
+ .contactText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 50px;;
+ }
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 650px;
+    min-height: 60vh;
+    gap: 30px;
+    border: 1px solid transparent;
+    border-image: linear-gradient( #515ada 0%, #efd5ff 100%) ;
+    border-image-slice: 1;
+}
+
+
+
+.inputBox {
+    position: relative;
+    width: 250px;
+}
+
+.contact .inputBox #messageBox {
+    width: 250px;
+    height: 100px;
+}
+
+
+.inputBox input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid grey;
+    background: #161616;
+    border-radius: 5px;
+    outline: none;
+    color: #ffff;
+    font-size: 1em;
+    transition: 0.5s;
+}
+
+
+
+.inputBox label {
+    position: absolute;
+    top: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgba(255,255,255,0.25);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.inputBox input:valid ~ label,
+.inputBox input:focus ~ label {
+    color: #00dfc4;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: #161616;
+    border-left: 1px solid #00dfc4;
+    border-right: 1px solid #00dfc4;
+    letter-spacing: 0.2em;
+}
+
+.inputBox:nth-child(2) input:valid ~ label,
+.inputBox:nth-child(2) input:focus ~ label {
+    background: #00dfc4;
+    color: #161616;
+    border-radius: 2px;
+}
+
+.inputBox input:valid,
+.inputBox input:focus {
+    border: 1px solid #00dfc4;
+}
 
 /* For tab buttons */
 /*.btn {

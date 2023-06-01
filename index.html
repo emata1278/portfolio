@@ -24,8 +24,8 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#">Project</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#projectCards">Project</a></li>
+        <li><a href="#contactPart">Contact</a></li>
         
     </ul>
 </header>
@@ -66,14 +66,21 @@
 </div>
 
 
-    <nav class="skillSection container">
-    <h1 class="container hidden" id="skills">Skills</h1> 
+
+
+    <nav class="skillSection container" id="skills">
+    <h1 class="container hidden" >Skills</h1> 
     <div class="boxSkills hidden">
         <span></span>
         <div class="contentCard">
             <h2>Back-End</h2>
-            <p>Java, PostgreSQL, Python, C++, RESTful APIs</p>
-            <a href="#">Read more</a>
+            <ul>
+                <li>- Java</li>
+                <li>- PostgreSQL</li>
+                <li>- Python</li>
+                <li>- C++</li>
+                <li>- RESTful APIs</li>
+            </ul>
         </div>
     </div>
 
@@ -81,8 +88,12 @@
         <span></span>
         <div class="contentCard">
             <h2>Front-End</h2>
-            <p>HTML, CSS, JavaScript, Vue.js</p>
-            <a href="#">Read more</a>
+            <ul>
+                <li>- HTML</li><br>
+                <li>- CSS</li>
+                <li>- JavaScript</li><br>
+                <li>- Vue.js</li>
+            </ul>
         </div>
     </div>
 
@@ -90,45 +101,73 @@
         <span></span>
         <div class="contentCard">
             <h2>Tools</h2>
-            <p>Git, Postman, IntelliJ, Unit Testing(JUnit), </p>
-            <a href="#">Read more</a>
+            <ul>
+                <li>- Git</li>
+                <li>- Postman</li>
+                <li>- IntelliJ</li>
+                <li>- Unit Testing(JUnit)</li>
+            </ul>
         </div>
     </div>
     </nav>
     
-    <div class="projects container hidden" id="projectCards">
-        <h1 class="container">Projects</h1>
-        <div class="card" style = "--clr:#009688;">
+
+
+
+    <div class="projects container" id="projectCards">
+        <h1 class="container hidden">Projects</h1>
+        <div class = "outcard hidden">
+        <nav class="card hidden" style = "--clr:#009688;">
             <div class="img"><img src="vendingMachine.jpeg"></div>
             <div class="content">
                 <h2>Vending Machine</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing 
                     elit. Culpa ut iusto corporis aliquid dolore, qui 
                     assumenda molestias ipsum nam ad.</p>
-                <a href="#">Source Code</a>
+                <a href="https://github.com/emata1278/Vending-Machine" target="_blank">Source Code</a>
             </div>
-        </div>
-        <div class="card" style = "--clr:#ff3e7f;">
-            <div class="img"><img src=""></div>
+        </nav>
+        <nav class="card hidden" style = "--clr:#ff3e7f;">
+            <div class="img"><img src="TEnmo.png"></div>
             <div class="content">
                 <h2>TEnmo</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing 
                     elit. Culpa ut iusto corporis aliquid dolore, qui 
                     assumenda molestias ipsum nam ad.</p>
-                <a href="#">Source Code</a>
+                <a href="https://github.com/emata1278/TEnmo" target="_blank">Source Code</a>
             </div>
-        </div>
-        <div class="card" style = "--clr:#03a9f4;">
+        </nav>
+        <nav class="card hidden" style = "--clr:#03a9f4;">
             <div class="img"><img src="logo_thumbnail.png"></div>
             <div class="content">
                 <h2>Ale Trail</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing 
                     elit. Culpa ut iusto corporis aliquid dolore, qui 
                     assumenda molestias ipsum nam ad.</p>
-                <a href="#">Source Code</a>
+                <a href="https://github.com/emata1278/Ale-Trail" target="_blank">Source Code</a>
             </div>
+        </nav>
         </div>
     </div>
+
+
+    <h1 class="contactText container hidden">CONTACT ME!</h1>
+    <form class="contact container hidden" id="contactPart" action="https://formspree.io/f/xvonjplo" method="POST">
+        <div class="inputBox">
+            <input type="text" required="required">
+            <label for="name">Name: </label>
+        </div>
+        <div class="inputBox">
+            <input type="text" required="required">
+            <label for="email">Email: </label>
+        </div>
+        <div class="inputBox">
+            <input type="text" required="required" id="messageBox">
+            <label for="text">Message: </label>
+        </div>
+        <button type="submit">Submit</button>
+
+    </form>
 
 <script src="app.js"></script>
 <script defer src="scroll.js"></script>
