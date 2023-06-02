@@ -150,20 +150,20 @@
         </div>
     </div>
 
-
-    <h1 class="contactText container hidden">CONTACT ME!</h1>
+    
+    <h1 class="contactText container hidden">CONTACT ME !</h1>
     <form class="contact container hidden" id="contactPart" action="https://formspree.io/f/xvonjplo" method="POST">
         <div class="inputBox">
-            <input type="text" required="required">
-            <label for="name">Name: </label>
+            <input name="fullName" type="text" required="required">
+            <label for="fullName">Name: </label>
         </div>
         <div class="inputBox">
-            <input type="text" required="required">
+            <input type="text" name="email" required="required">
             <label for="email">Email: </label>
         </div>
         <div class="inputBox">
-            <input type="text" required="required" id="messageBox">
-            <label for="text">Message: </label>
+            <input name="message" type="text" required="required" id="messageBox">
+            <label for="message">Message: </label>
         </div>
         <button type="submit">Submit</button>
 

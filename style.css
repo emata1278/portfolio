@@ -37,8 +37,6 @@ body {
 }
 
 
-
-
 header {
     display: flex;
     align-items: center;
@@ -82,7 +80,7 @@ ul li a {
 }
 
 ul li a:hover {
-    color: red;
+    color: #00dfc4;
     transition: .4s;
 }
 
@@ -163,6 +161,8 @@ div.homeContainer {
         cursor .4s step-end infinite alternate;
     animation-delay: 4s;
     animation-fill-mode: both;
+    font-size: 1.6em;
+    padding-top: 10px;
 
 }
 @keyframes typing {
@@ -184,6 +184,8 @@ div.firstSection {
     align-items: center;
     position: relative;
     height: 100vh;
+    width: 60%;
+    text-align: justify;
 }
 
 .aboutMe {
@@ -191,12 +193,12 @@ div.firstSection {
 }
 
 .line {
-    border: 2px solid red;
+    border: 2px solid gray;
 }
 
 .aboutMe h1 {
     padding-bottom: 5px;
-    border-bottom: 5px solid red;
+    border-bottom: 5px solid gray;
     padding-right: 100px;
 }
 
@@ -207,9 +209,8 @@ div.firstSection {
 }
 
 .bottomAM {
-    color: purple;
+    color: #515ada;
 }
-
 
 /*Skill Section*/
 
@@ -283,17 +284,17 @@ div.firstSection {
 
 .skillSection .boxSkills:nth-child(2):before,
 .skillSection .boxSkills:nth-child(2):after {
-    background: linear-gradient(315deg, #ffbc00, #ff0058)
+    background: linear-gradient(315deg, rgba(174,103,221,1), rgba(104,0,255,1))
 }
 
 .skillSection .boxSkills:nth-child(3):before,
 .skillSection .boxSkills:nth-child(3):after {
-    background: linear-gradient(315deg, #03a9f4, #ff0058)
+    background: linear-gradient(315deg, rgba(6,126,255,1), rgba(212,6,255,1))
 }
 
 .skillSection .boxSkills:nth-child(4):before,
 .skillSection .boxSkills:nth-child(4):after {
-    background: linear-gradient(315deg, #4dff03, #00d0ff)
+    background: linear-gradient(315deg, rgba(103,198,221,1), rgba(6,72,255,1))
 }
 
 .skillSection .boxSkills span {
@@ -406,8 +407,8 @@ div.firstSection {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 100px 50px;
-    padding: 300px 50px;
+    gap: 0 50px;
+    height: 100vh;
 }
 
 .projects .card {
@@ -512,6 +513,7 @@ div.firstSection {
 
 
  /*Contact Part*/
+ 
 
  .contactText {
     display: flex;
@@ -519,6 +521,7 @@ div.firstSection {
     align-items: center;
     text-align: center;
     padding-bottom: 50px;;
+    padding-top: 230px;
  }
 
 .contact {
@@ -533,8 +536,6 @@ div.firstSection {
     border-image: linear-gradient( #515ada 0%, #efd5ff 100%) ;
     border-image-slice: 1;
 }
-
-
 
 .inputBox {
     position: relative;
@@ -574,30 +575,30 @@ div.firstSection {
 
 .inputBox input:valid ~ label,
 .inputBox input:focus ~ label {
-    color: #00dfc4;
+    color: #515ada ;
     transform: translateX(10px) translateY(-7px);
     font-size: 0.65em;
     padding: 0 10px;
     background: #161616;
-    border-left: 1px solid #00dfc4;
-    border-right: 1px solid #00dfc4;
+    border-left: 1px solid #515ada ;
+    border-right: 1px solid #515ada ;
     letter-spacing: 0.2em;
 }
 
 .inputBox:nth-child(2) input:valid ~ label,
 .inputBox:nth-child(2) input:focus ~ label {
-    background: #00dfc4;
+    background: #515ada ;
     color: #161616;
     border-radius: 2px;
 }
 
 .inputBox input:valid,
 .inputBox input:focus {
-    border: 1px solid #00dfc4;
+    border: 1px solid #515ada ;
 }
 
 /* For tab buttons */
-/*.btn {
+button {
     width: 70px;
     height: 30px;
     border-radius: 30px;
@@ -607,15 +608,16 @@ div.firstSection {
     cursor: pointer;
     overflow: hidden;
    position: relative;
+   color: white;
    
 }
 
-.btn::before {
+button::before {
     content: "";
     position: absolute;
     width: 0%;
     height: 100%;
-    background-image: linear-gradient(90deg, rgba(174,103,221,1) 35%, rgba(0,212,255,1) 100%);
+    background-image: linear-gradient(90deg, #515ada 55%, #515ada 100%);
     color: white;
     top: 0;
     left: 0;
@@ -623,10 +625,10 @@ div.firstSection {
     transition: all 0.5s;
 }
 
-.btn:hover:before {
+button:hover:before {
     width: 100%;
 }
-*/
+
 
 
 /* Splash Screen */
