@@ -748,4 +748,8 @@ button:hover:before {
     .skillSection {
         margin-top: 50rem;
     }
+
+    .section {
+        margin-top: 45rem;
+    }
 }
