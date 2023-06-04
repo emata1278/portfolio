@@ -736,9 +736,6 @@ button:hover:before {
     .skillSection {
         margin-top: 10rem;
     }
-    .section {
-        margin-top: 10rem;
-    }
   }
 
 @media(min-width: 350px) and (max-width: 456px) {
@@ -749,6 +746,6 @@ button:hover:before {
         margin-top: 40rem;
     }
     .skillSection {
-        margin-top: 45rem;
+        margin-top: 50rem;
     }
 }
