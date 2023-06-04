@@ -31,7 +31,7 @@
 </header>
 
 
-<div class = "homeContainer" id="home">
+<div class = "homeContainer container" id="home">
     <video autoplay muted loop src="network.mp4" class ="video"></video>
     <span class="content">
     <h3>Hello, my name is</h3>
@@ -68,7 +68,7 @@
 
 
 
-    <nav class="skillSection container" id="skills">
+<div class="skillSection container" id="skills">
     <h1 class="container hidden" >Skills</h1> 
     <div class="boxSkills hidden">
         <span></span>
@@ -109,12 +109,12 @@
             </ul>
         </div>
     </div>
-    </nav>
+</div>
     
 
 
 
-    <div class="projects container" id="projectCards">
+    <div class="projects container section" id="projectCards">
         <h1 class="container hidden">Projects</h1>
         <div class = "outcard hidden">
         <nav class="card hidden" style = "--clr:#009688;">
@@ -150,8 +150,8 @@
         </div>
     </div>
 
-    
-    <h1 class="contactText container hidden">CONTACT ME !</h1>
+    <div class="contactClass container section2">
+    <h1 class="contactText hidden">CONTACT ME !</h1>
     <form class="contact container hidden" id="contactPart" action="https://formspree.io/f/xvonjplo" method="POST">
         <div class="inputBox">
             <input name="fullName" type="text" required="required">
@@ -168,6 +168,7 @@
         <button type="submit">Submit</button>
 
     </form>
+    </div>
 
 <script src="app.js"></script>
 <script defer src="scroll.js"></script>
