@@ -50,12 +50,12 @@ header {
     
 }
 
-.hero {
+/* .hero {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-}
+} */
 
 .hero a {
     text-decoration: none;
@@ -87,10 +87,24 @@ header h4 ul{
 }
 
 
-.list {
+/* .list {
     list-style: none;
     display: flex;
     gap: 25px;
+} */
+
+ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding-right:  20px;
+    padding-left: 20px;
+    border-radius: 25px;
+    right: 0;
+}
+ul li a {
+    color: black;
+    color: white;
+    text-decoration: none;
 }
 
 #toggler,
