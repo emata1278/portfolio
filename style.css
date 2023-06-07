@@ -50,6 +50,18 @@ header {
     
 }
 
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .container {
   width: 100%;
   margin-left: auto;
@@ -75,17 +87,15 @@ header h4 ul{
 }
 
 
-ul li {
-    display: inline-block;
-    list-style-type: none;
-    padding-right:  20px;
-    padding-left: 20px;
-    border-radius: 25px;
+.list {
+    list-style: none;
+    display: flex;
+    gap: 25px;
 }
-ul li a {
-    color: black;
-    color: white;
-    text-decoration: none;
+
+#toggler,
+.hero label {
+    display: none;
 }
 
 ul li a:hover {
@@ -192,7 +202,6 @@ div.firstSection {
     align-items: center;
     position: relative;
     height: 100vh;
-    text-align: justify;
 }
 
 .aboutMe {
@@ -707,6 +716,30 @@ button:hover:before {
     .container {
       max-width: 640px;
     }
+
+    /* .menu {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .hero label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    #toggler:checked ~ .menu {
+        max-height: 100%;
+        z-index: 1;
+    } */
+    
     .section{
         margin-top: 33rem;
     }

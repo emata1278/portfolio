@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
 </head>
@@ -20,14 +21,18 @@
 
 <header class ="hero container">
     <h4>EM</h4>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projectCards">Project</a></li>
-        <li><a href="#contactPart">Contact</a></li>
-        
-    </ul>
+    <input type="checkbox" id="toggler">
+    <label for="toggler"><i class="fa-bars"></i></label>
+    <div class="menu">
+        <ul class="list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projectCards">Project</a></li>
+            <li><a href="#contactPart">Contact</a></li>
+            
+        </ul>
+    </div>
 </header>
 
 
@@ -47,19 +52,16 @@
 <nav class = "aboutMe container hidden">
     <h1>About Me</h1>
     <span class="line"></span>
-    <h3>Welcome to my portfolio! I'm Emmanuel Mata, a passionate and dedicated full-stack software 
-        developer with a strong foundation in web development. I initially graduated from the 
-        University of Texas at Austin with a Bachelor's Degree in Kinesiology. My journey into the world 
-        of software development began when I graduated from the Tech Elevator bootcamp. This intensive 
-        program equipped me with a solid understanding of both front-end and back-end development, 
-        allowing me to excel in a wide range of projects. <br><br>
+    <h3>Welcome to my portfolio! I'm Emmanuel Mata, a dedicated full-stack software developer with a 
+        strong foundation in web development. I graduated from the University of Texas at Austin with 
+        a Bachelor's Degree in Kinesiology before discovering my passion for software development at 
+        the Tech Elevator bootcamp. With a solid understanding of front-end and back-end development, 
+        I excel in diverse projects. <br><br>
 
-        <span class ="bottomAM">One aspect I truly enjoy about software development
-        is the opportunity to solve complex problems. I thrive on analyzing intricate challenges and crafting
-        innovative solutions. I approach each project with a methodical and logical mindset, breaking down 
-        problems into manageable steps and collaborating with teams to achieve remarkable outcomes. 
-        Continuous learning is a cornerstone of my professional journey. I actively pursue opportunities to 
-        expand my knowledge and stay up-to-date with emerging industry trends.
+        <span class ="bottomAM">I enjoy tackling complex problems and crafting innovative solutions, approaching each project 
+            with a methodical and logical mindset. I can break it down into manageable steps and collaborate with teams to achieve remarkable outcomes.
+            Continuous learning is key to my professional journey as I actively stay 
+            up-to-date with emerging industry trends.
         </span>
     </h3>
 </nav>
@@ -89,9 +91,9 @@
         <div class="contentCard">
             <h2>Front-End</h2>
             <ul>
-                <li>- HTML</li><br>
+                <li>- HTML</li>
                 <li>- CSS</li>
-                <li>- JavaScript</li><br>
+                <li>- JavaScript</li>
                 <li>- Vue.js</li>
             </ul>
         </div>
@@ -121,9 +123,9 @@
             <div class="img"><img src="vendingMachine.jpeg"></div>
             <div class="content">
                 <h2>Vending Machine</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing 
-                    elit. Culpa ut iusto corporis aliquid dolore, qui 
-                    assumenda molestias ipsum nam ad.</p>
+                <p> This application allows the user to list items that are inside a 
+                    vending machine. The user will then be able to insert money to buy these 
+                    items until they no longer have sufficient funds to buy anything, unless they add more money.</p>
                 <a href="https://github.com/emata1278/Vending-Machine" target="_blank">Source Code</a>
             </div>
         </nav>
@@ -131,9 +133,10 @@
             <div class="img"><img src="TEnmo.png"></div>
             <div class="content">
                 <h2>TEnmo</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing 
-                    elit. Culpa ut iusto corporis aliquid dolore, qui 
-                    assumenda molestias ipsum nam ad.</p>
+                <p>Successfully created an application that allowed for the user to insert, 
+                    send and receive money using Java, PostGresSQL, PostMan, and RESTful API’s. 
+                    Application was created using IntelliJ IDE.
+                </p>
                 <a href="https://github.com/emata1278/TEnmo" target="_blank">Source Code</a>
             </div>
         </nav>
@@ -141,9 +144,9 @@
             <div class="img"><img src="logo_thumbnail.png"></div>
             <div class="content">
                 <h2>Ale Trail</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing 
-                    elit. Culpa ut iusto corporis aliquid dolore, qui 
-                    assumenda molestias ipsum nam ad.</p>
+                <p>Allows a user to find breweries within their city. The user 
+                    is able to look at more information such as the types of beers, address, and hours open. 
+                    Used Java, PostgreSQL, HTML, CSS, Vue.js, and Git to build all components of the website.</p>
                 <a href="https://github.com/emata1278/Ale-Trail" target="_blank">Source Code</a>
             </div>
         </nav>
